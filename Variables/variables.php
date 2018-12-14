@@ -5,15 +5,20 @@
  * Date: 13.12.2018
  * Time: 13:09
  */
+// matemaatilised ja võrdlusoperaatorid
+$arv1 = 42;
+$arv2 = 11;
 
-$taisArv = 3;
-$reaalArv = 3.3;
-$sone = 'kolm';
-$toevaartusTrue = true;
-$toevaartusFalse = false;
+echo $arv1.' + '.$arv2.' = '.($arv1 + $arv2).'<br>';
+echo $arv1.' / '.$arv2.' = '.($arv1 / $arv2).'<br>';
+echo $arv1.' * '.$arv2.' = '.($arv1 * $arv2).'<br>';
+echo $arv1.' - '.$arv2.' = '.($arv1 - $arv2).'<br>';
 
-// väljastame muutujad koos selgitustega
-echo 'Täisarv '.$taisArv.'<br>';
+echo '<hr>';
 
-// kontrollime tüüpi
-echo gettype($sone);
+echo $arv1.' == '.$arv2.' on '.($arv1 == $arv2).'<br>';
+echo $arv1.' != '.$arv2.' on '.($arv1 != $arv2).'<br>';
+echo $arv1.' <= '.$arv2.' on '.($arv1 <= $arv2).'<br>';
+echo $arv1.' >= '.$arv2.' on '.($arv1 >= $arv2).'<br>';
+echo $arv1.' < '.$arv2.' on '.($arv1 < $arv2).'<br>';
+echo $arv1.' > '.$arv2.' on '.($arv1 > $arv2).'<br>';
