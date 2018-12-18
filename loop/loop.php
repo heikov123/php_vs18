@@ -90,8 +90,8 @@ echo '</table>';
 echo '<br>';
 echo '<h5>Ülesanne 4</h5>';
 
-$arv3 = 1234;
-    while($arv3 != 0) {
+$arv3 = 48557812535;
+    while($arv3 !=  0) {
         $number = $arv3 % 10;
         echo 'Number = '.$number.'<br>';
         $arv3 = $arv3 / 10;
