@@ -1,10 +1,19 @@
 <?php
 $kasutajad = array(
-    'alice',
-    'bob',
-    'lucy'
+    array(
+        'Alice',
+        'Alice',
+        'Liddle'
+    ),
+    array(
+        'Bob',
+        'Bob',
+        'Builder'
+    )
 );
 
-for($i = 0; $i < count($kasutajad); $i++){
-    echo $i.' -'.$kasutajad[$i].'<br>';
-}
+
+echo '<hr>';
+echo '<pre>';
+print_r($kasutajad);
+echo '</pre>';
