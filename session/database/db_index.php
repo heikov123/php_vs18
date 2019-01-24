@@ -21,5 +21,5 @@ echo '<pre>';
 print_r($aeg);
 echo '</pre>';
 
-echo $aeg[0]['NOW()'].<br>;
+echo $aeg[0]['NOW()'].'<br>';
 
