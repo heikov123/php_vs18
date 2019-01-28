@@ -75,6 +75,41 @@ if(checkdate(12,32,2013)) {
 } else {
     echo ('Kuupäev on valesti sisestatud');
 }
+echo '<br>';
+
+// Ülesanne 8
+echo date('20.03.2013 12:31' , time());	 //20.03.2013 12:31
+echo '<br>';
+echo '<br>';
+
+// kuva tänane eestikeelne nädalapäev
+$nadalapaevad = array('esmaspäev', 'teisipäev', 'kolmpaäev', 'neljapäev', 'reede', 'laupäev', 'pühapäev');
+$praegune_nadalapaev = $nadalapaevad[date('N', time()) - 1];
+echo $praegune_nadalapaev;
+echo '<br>';
+// kuva eestikeelne kuupäev koos nädalapäevaga
+echo '<br>';
+echo $paev.'.'.$kuu.' '.$aasta.' '.$praegune_nadalapaev;
+echo '<br>';
+echo '<br>';
+
+// leia mitu päeva on jäänud j'rgmise jaanipäevani
+
+$date1=date_create("2019-06-24");
+$date2=date_create("2019-01-28");
+$diff=date_diff($date1,$date2, true);
+echo $diff->format("jaanipäevani on aega %a päeva");
+echo '<br>';
+echo '<br>';
+
+// Kuva mõlema sünnikuupäevad ning vahe aastates
+
+$metsheina_synnipaev = date_create("1980-11-06");
+$minu_synnipaev = date_create("1996-10-29");
+$difference = $metsheina_synnipaev->diff($minu_synnipaev);
+echo 'Sünnipäevade erinevus on '.$difference->y.' aastat ';
+echo '<br>';
+echo '<br>';
 
 
 ?>
